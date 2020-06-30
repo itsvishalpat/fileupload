@@ -13,7 +13,7 @@ const Uploader = () => {
     const props = {
         name: 'photo',
         multiple: false,
-        action: 'http://localhost:5000/photo',
+        action: 'https://fileuploads.netlify.app/photo',
         onChange(info) {
             const { status } = info.file;
             if (status !== 'uploading') {
